@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get the source code  🛎️
-        uses: actions/checkout@latest
+        uses: actions/checkout@v3
       - name: Node environment version 🗜️
-        uses: actions/setup-node@latest
+        uses: actions/setup-node@v3
         with:
           node-version: 23.1.0
       - name: Install Dependencies ⚙️
@@ -23,7 +23,7 @@ jobs:
           touch out/.nojekyll
       - name: 部署 🚀
         # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@latest
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
           folder: out
