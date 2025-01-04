@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Get the source code  🛎️
         uses: actions/checkout@v3
+      - name: Print GITHUB_ACTIONS
+        run: echo "GITHUB_ACTIONS: $GITHUB_ACTIONS"
       - name: Node environment version 🗜️
         uses: actions/setup-node@v3
         with:
