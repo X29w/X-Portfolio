@@ -1,7 +1,6 @@
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constant/config";
-import Image from "next/image";
 import Link from "next/link";
-
+import CustomImage from "./CustomImage";
 
 export const Navbar = () => {
   return (
@@ -11,7 +10,7 @@ export const Navbar = () => {
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
         >
-          <Image
+          <CustomImage
             src="/logo.png"
             alt="Logo"
             width={70}

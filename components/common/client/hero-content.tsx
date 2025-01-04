@@ -2,13 +2,13 @@
 
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
+import CustomImage from "@/components/config/CustomImage";
 
 export const HeroContent = () => {
   return (
@@ -61,7 +61,7 @@ export const HeroContent = () => {
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
-        <Image
+        <CustomImage
           src="/hero-bg.svg"
           alt="work icons"
           height={650}

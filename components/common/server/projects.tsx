@@ -1,7 +1,7 @@
 import { PROJECTS } from "@/constant/config";
 import Link from "next/link";
-import Image from "next/image";
 import { FC } from "react";
+import CustomImage from "@/components/config/CustomImage";
 
 const Projects: FC<unknown> = () => {
   return (
@@ -21,7 +21,7 @@ const Projects: FC<unknown> = () => {
             rel="noreferrer noopener"
             className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
           >
-            <Image
+            <CustomImage
               src={project.image}
               alt={project.title}
               width={1000}

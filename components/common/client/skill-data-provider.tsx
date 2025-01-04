@@ -1,8 +1,7 @@
 "use client";
 
-import { assetPrefix } from "@/next.config";
+import CustomImage from "@/components/config/CustomImage";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 type SkillDataProviderProps = {
@@ -40,8 +39,8 @@ export const SkillDataProvider = ({
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image
-        src={`${assetPrefix}/skills/${src}`}
+      <CustomImage
+        src={`/skills/${src}`}
         width={width}
         height={height}
         alt={name}
