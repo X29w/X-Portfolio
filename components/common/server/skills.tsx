@@ -8,6 +8,7 @@ import {
 import { FC } from "react";
 import { SkillDataProvider } from "../client/skill-data-provider";
 import SkillText from "../client/skill-text";
+import { assetPrefix } from "@/next.config";
 
 const Skills: FC<unknown> = () => {
   return (
@@ -90,7 +91,10 @@ const Skills: FC<unknown> = () => {
             muted
             autoPlay
           >
-            <source src="/videos/skills-bg.webm" type="video/webm" />
+            <source
+              src={`${assetPrefix}/videos/skills-bg.webm`}
+              type="video/webm"
+            />
           </video>
         </div>
       </div>

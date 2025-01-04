@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { slideInFromTop } from "@/utils/motion";
 import CustomImage from "@/components/config/CustomImage";
+import { assetPrefix } from "@/next.config";
 
 export const Encryption = () => {
   return (
@@ -59,7 +60,10 @@ export const Encryption = () => {
           preload="false"
           className="w-full h-auto"
         >
-          <source src="/videos/encryption-bg.webm" type="video/webm" />
+          <source
+            src={`${assetPrefix}/videos/encryption-bg.webm`}
+            type="video/webm"
+          />
         </video>
       </div>
     </div>
