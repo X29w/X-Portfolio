@@ -26,3 +26,4 @@ jobs:
         with:
           branch: main
           folder: out
+          clean: true
