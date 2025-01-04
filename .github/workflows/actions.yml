@@ -20,12 +20,9 @@ jobs:
       - name: Pack 🏗️
         run: |
           npm run build
-          mkdir -p out
-          touch out/.nojekyll
       - name: Deploy 🚀
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
           folder: out
-          clean: true
