@@ -20,11 +20,14 @@ jobs:
           node-version: 23.1.0
       - name: Install Dependencies ⚙️
         run: npm install
-      - name: Pack 🏗️
+      - name: Build and Export 🏗️
         run: |
           npm run build
           mkdir -p out
           touch out/.nojekyll
+      - name: Print assetPrefix and basePath
+        run: |
+          node -e "console.log('Asset Prefix:', require('./next.config.js').assetPrefix); console.log('Base Path:', require('./next.config.js').basePath);"
       - name: Deploy 🚀
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@v4

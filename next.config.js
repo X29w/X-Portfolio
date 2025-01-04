@@ -11,6 +11,10 @@ if (isGithubActions) {
   basePath = `/${repo}`;
 }
 
+// 打印 assetPrefix 和 basePath
+console.log("Asset Prefix:", assetPrefix);
+console.log("Base Path:", basePath);
+
 const nextConfig = {
   assetPrefix,
   basePath,
