@@ -5,7 +5,7 @@ let assetPrefix = "";
 let basePath = "";
 
 if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+  const repo = "X-Portfolio";
 
   assetPrefix = `/${repo}/`;
   basePath = `/${repo}`;
