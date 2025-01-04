@@ -1,5 +1,6 @@
 "use client";
 
+import { assetPrefix } from "@/next.config";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
@@ -39,7 +40,12 @@ export const SkillDataProvider = ({
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image src={`/skills/${src}`} width={width} height={height} alt={name} />
+      <Image
+        src={`${assetPrefix}/skills/${src}`}
+        width={width}
+        height={height}
+        alt={name}
+      />
     </motion.div>
   );
 };
