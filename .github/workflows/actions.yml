@@ -29,3 +29,5 @@ jobs:
           branch: gh-pages
           folder: out
           clean: true
+      - name: Check environment variables
+        run: echo "GITHUB_ACTIONS: $GITHUB_ACTIONS"
