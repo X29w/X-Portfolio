@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { FaYoutube, FaFacebook } from "react-icons/fa";
 import {
   RxDiscordLogo,
@@ -356,3 +357,38 @@ export const NAV_LINKS = [
 export const LINKS = {
   sourceCode: "https://github.com/X29w",
 };
+
+export const siteConfig: Metadata = {
+  title: "X-Portfolio",
+  description: "Welcome to my portfolio.",
+  keywords: [
+    "reactjs",
+    "nextjs",
+    "react",
+    "portfolio",
+    "3d-portfolio",
+    "3d-website",
+    "sonner",
+    "framer-motion",
+    "motion",
+    "animation",
+    "heroicons",
+    "next-themes",
+    "postcss",
+    "prettier",
+    "react-dom",
+    "tailwindcss",
+    "tailwindcss-animate",
+    "ui/ux",
+    "js",
+    "javascript",
+    "typescript",
+    "eslint",
+    "html",
+    "css",
+  ] as Array<string>,
+  authors: {
+    name: "x29",
+    url: "https://github.com/X29w",
+  },
+} as const;
