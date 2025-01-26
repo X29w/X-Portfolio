@@ -1,11 +1,4 @@
 import { Metadata } from "next";
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-} from "react-icons/rx";
 
 export const SKILL_DATA = [
   {
@@ -69,137 +62,14 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "Node.js",
     image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-] as const;
-
-export const SOCIALS = [
-  {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
-  },
-] as const;
-
-export const FRONTEND_SKILL = [
-  {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
     width: 80,
     height: 80,
   },
 ] as const;
 
 export const BACKEND_SKILL = [
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Express.js",
-    image: "express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Firebase",
-    image: "firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
-    width: 70,
-    height: 70,
-  },
   {
     skill_name: "MySQL",
     image: "mysql.png",
@@ -212,12 +82,6 @@ export const BACKEND_SKILL = [
     width: 70,
     height: 70,
   },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
 ] as const;
 
 export const FULLSTACK_SKILL = [
@@ -228,18 +92,17 @@ export const FULLSTACK_SKILL = [
     height: 70,
   },
   {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
-  {
     skill_name: "Docker",
     image: "docker.png",
     width: 70,
     height: 70,
   },
-
+  {
+    skill_name: "Nest.js",
+    image: "nest.png",
+    width: 70,
+    height: 70,
+  },
   {
     skill_name: "Figma",
     image: "figma.png",
@@ -248,94 +111,24 @@ export const FULLSTACK_SKILL = [
   },
 ] as const;
 
-export const OTHER_SKILL = [
-  {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
-  },
-] as const;
-
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "AI合同云管家",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
+      "基于Electron、Nest、SQLite、Vite、React、tailwind css实现多类型文件的在线和硬件存储,利用前端数据库存储和异步队列进行不同账号的上传和下载管理、以及AI在线分析指定文件提取出文件摘要并给予在线修改、下载等功能。根据不同角色赋予不同操作权限。接入NAS实现文件的远程存储。文件的本地下载和NAS文件的备份。",
     image: "/projects/project-1.png",
-    link: "https://example.com",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Wander Trip",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
+      "基于Expo、React Native、Expo-Sqlite、React实现一个对外游客访华的旅游app。支持多种收拾操作、本地优先策略的前端缓存数据库。实现拍照、地理位置获取、音乐播放的暂停开始、队列的切换、以及地图的展示。",
     image: "/projects/project-2.png",
-    link: "https://example.com",
   },
   {
-    title: "Space Themed Website",
+    title: "AI SEO智能优化",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
+      "基于React、tailwind css实现一个AI智能优化网站的SEO。利用对Google SEO的优化以及爬取规则和Gemini,根据用户输入的title 和 description 以及keyword进行优化。AI根据得到的输入结果得到一篇SEO优化后的文章。",
     image: "/projects/project-3.png",
-    link: "https://example.com",
-  },
-] as const;
-
-export const FOOTER_DATA = [
-  {
-    title: "Community",
-    data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
-  },
-  {
-    title: "Social Media",
-    data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
-      },
-    ],
-  },
-  {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
-    ],
   },
 ] as const;
 
@@ -368,7 +161,6 @@ export const siteConfig: Metadata = {
     "portfolio",
     "3d-portfolio",
     "3d-website",
-    "sonner",
     "framer-motion",
     "motion",
     "animation",

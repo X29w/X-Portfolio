@@ -1,4 +1,4 @@
-import { LINKS, NAV_LINKS, SOCIALS } from "@/constant/config";
+import { NAV_LINKS } from "@/constant/config";
 import Link from "next/link";
 import CustomImage from "./CustomImage";
 
@@ -19,7 +19,7 @@ export const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
           <div className="font-bold ml-[10px] hidden md:block text-gray-300">
-            John Doe
+            X29
           </div>
         </Link>
 
@@ -34,31 +34,10 @@ export const Navbar = () => {
                 {link.title}
               </Link>
             ))}
-
-            {/* source code */}
-            <Link
-              href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
-            >
-              Source Code
-            </Link>
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
-          {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link
-              href={link}
-              target="_blank"
-              rel="noreferrer noopener"
-              key={name}
-            >
-              <Icon className="h-6 w-6 text-white" />
-            </Link>
-          ))}
-        </div>
+        <div />
       </div>
     </div>
   );

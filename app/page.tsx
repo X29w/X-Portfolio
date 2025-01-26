@@ -1,4 +1,3 @@
-import { Encryption } from "@/components/common/server/encryption";
 import { Hero } from "@/components/common/server/hero";
 import Projects from "@/components/common/server/projects";
 import Skills from "@/components/common/server/skills";
@@ -9,7 +8,6 @@ const Home: FC<unknown> = () => (
     <div className="flex flex-col gap-20">
       <Hero />
       <Skills />
-      <Encryption />
       <Projects />
     </div>
   </main>
